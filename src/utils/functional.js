@@ -1,0 +1,1 @@
+export const isAny = initialValue => conditions => conditions.reduce((acc, cur) => acc || cur[0](initialValue) === cur[1], false);

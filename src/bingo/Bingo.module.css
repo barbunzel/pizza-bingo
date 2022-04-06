@@ -1,0 +1,76 @@
+.header {
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid cyan;
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border: 1px solid cyan;
+    background-color: white;
+}
+
+.board {
+    width: 900px;
+    height: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid cyan;
+
+}
+.card {
+    border: 1px solid cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.active {
+    background-color: pink;
+}
+
+.inactive {
+    background-color: lightblue;
+}
+
+@media (max-width: 500px) {
+    .header {
+        width: 100%;
+    }
+
+    .board {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+        text-align: center;
+        min-height: 100px;
+    }
+}
+
+.isWon {
+
+}
+
+.isWon .headerTitle {
+    animation: blink 2s infinite;
+}
+
+@keyframes blink{
+    0%		{ background-color: lightblue;}
+    25%		{ background-color: pink;}
+    50%		{ background-color: purple;}
+    75%		{ background-color: pink;}
+    100%	{ background-color: lightblue;}
+}
