@@ -59,10 +59,6 @@
     }
 }
 
-.isWon {
-
-}
-
 .isWon .headerTitle {
     animation: blink 2s infinite;
 }
