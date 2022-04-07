@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pizza-bingo/static/css/main.0b6b1e8f.css",
-    "main.js": "/pizza-bingo/static/js/main.f5ae0840.js",
+    "main.js": "/pizza-bingo/static/js/main.793a27f4.js",
     "static/js/787.e54eb4d0.chunk.js": "/pizza-bingo/static/js/787.e54eb4d0.chunk.js",
     "index.html": "/pizza-bingo/index.html",
     "main.0b6b1e8f.css.map": "/pizza-bingo/static/css/main.0b6b1e8f.css.map",
-    "main.f5ae0840.js.map": "/pizza-bingo/static/js/main.f5ae0840.js.map",
+    "main.793a27f4.js.map": "/pizza-bingo/static/js/main.793a27f4.js.map",
     "787.e54eb4d0.chunk.js.map": "/pizza-bingo/static/js/787.e54eb4d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b6b1e8f.css",
-    "static/js/main.f5ae0840.js"
+    "static/js/main.793a27f4.js"
   ]
 }
