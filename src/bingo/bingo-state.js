@@ -56,7 +56,7 @@ const isLeftDiagonal = board => position => {
     return false;
   }
 
-  for (let i = 0; i < position.row; i++) {
+  for (let i = 0; i <= position.row; i++) {
     if (!board[position.row - i][position.col - i].active) {
       return false;
     }
@@ -72,12 +72,18 @@ const isLeftDiagonal = board => position => {
 };
 
 const isRightDiagonal = board => position => {
-  if ((NUMBER_OF_ROWS - 1 - position.row) !== position.col) {
+  if (position.row + position.col !== NUMBER_OF_ROWS - 1) {
     return false;
   }
 
   for (let i = 0; i < NUMBER_OF_ROWS - position.row; i++) {
     if (!board[position.row + i][position.col - i].active) {
+      return false;
+    }
+  }
+  
+  for (let i = NUMBER_OF_ROWS - position.row + 1; i <= NUMBER_OF_ROWS; i++) {
+    if (!board[NUMBER_OF_ROWS - i][i - 1].active) {
       return false;
     }
   }
